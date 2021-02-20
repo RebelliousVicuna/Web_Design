@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>科学养猪2</title>
+    <link rel="stylesheet" href="css/day_night.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/all_div.css">
+
+</head>
+<body onload="e('body')">
+<!--导航条-->
+<div class="nav" id="nav">
+    <ul class="main">
+        <li><a href="main.html">首页</a>
+
+        </li>
+        <li><a href="#">随笔</a>
+            <ul class="drop menu">
+                <li><a href="#">最新随笔</a></li>
+                <li><a href="#">随笔档案</a></li>
+                <li><a href="#">其他随笔</a></li>
+
+            </ul>
+        </li>
+        <li><a href="#">档案</a>
+            <ul class="drop menu">
+                <li><a href="#">NULL</a></li>
+                <li><a href="#">NUll</a></li>
+                <li><a href="#">NULL</a></li>
+
+            </ul>
+        </li>
+        <li><a href="#">其他</a>
+            <ul class="drop menu">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">随笔</a></li>
+                <li><a href="#">档案</a></li>
+
+            </ul>
+        </li>
+        <li><a href="#">常用网址</a>
+            <ul class="drop menu">
+                <li><a href="#">百度</a></li>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">CSDN</a></li>
+            </ul>
+        </li>
+        <li><a href="#">关于</a>
+            <ul class="drop menu">
+                <li><a href="#">我的资料</a></li>
+                <li><a href="#">联系方式</a></li>
+                <li><a href="#">我的Github</a></li>
+            </ul>
+        </li>
+    </ul>
+    <!--  开关  -->
+    <div class="shift">
+        <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
+    </div>
+</div>
+<div class="bg_img_page"></div>
+<div class="div_tag">
+    <div class="tag_text">
+        <p>这是我的博客</p>
+        <span></span>
+    </div>
+</div>
+<div class="div_base_page">
+    <div class="div_01_base">
+        <!--侧边栏-->
+        <div class="sidebar">
+            <div class="sidebar_box_1">
+                <div class="sidebar_tag">公告</div>
+                <div class="sidebar_text">
+                    <p>这篇文章不错，不妨关注我吧，这是对我最大的鼓励，我将为你创造更加优秀的文章</p>
+                    <br/>
+                    <p>鼓励一下：&ensp;&ensp;关注</p><br/>
+                    <p>昵称：&ensp;&ensp;X</p>
+                    <p>粉丝：&ensp;&ensp;999+</p>
+                    <p>关注：&ensp;&ensp;23</p><br/>
+                    <p>我的github ↓↓↓↓↓↓↓↓</p>
+                    <a href="https://github.com/RebelliousVicuna">
+                        <div class="sidebar_github"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar_box">
+                <div class="sidebar_tag">搜索</div>
+                <div class="sidebar_search">
+                    <input type="text" class="sidebar_input"/>
+                    <input type="button" class="sidebar_button" value="找找看"/>
+                </div>
+                <div class="cal_box">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td colspan="7">
+                                <table class="cal_box">
+                                    <tbody>
+                                    <tr>
+                                        <td>&lt;</td>
+                                        <td align="center">2020年12月</td>
+                                        <td align="right">&gt;</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>日</th>
+                            <th>一</th>
+                            <th>二</th>
+                            <th>三</th>
+                            <th>四</th>
+                            <th>五</th>
+                            <th>六</th>
+                        </tr>
+                        <tr>
+                            <td align="center">29</td>
+                            <td align="center">30</td>
+                            <td class="" align="center">1</td>
+                            <td class="" align="center">2</td>
+                            <td class="" align="center">3</td>
+                            <td class="" align="center">4</td>
+                            <td align="center">5</td>
+                        </tr>
+                        <tr>
+                            <td align="center">6</td>
+                            <td class="" align="center">7</td>
+                            <td class="" align="center">8</td>
+                            <td class="" align="center">9</td>
+                            <td class="" align="center">10</td>
+                            <td class="" align="center">11</td>
+                            <td align="center">12</td>
+                        </tr>
+                        <tr>
+                            <td align="center">13</td>
+                            <td class="" align="center">14</td>
+                            <td class="" align="center">15</td>
+                            <td class="" align="center">16</td>
+                            <td class="" align="center">17</td>
+                            <td class="" align="center">18</td>
+                            <td align="center">19</td>
+                        </tr>
+                        <tr>
+                            <td align="center">20</td>
+                            <td class="" align="center">21</td>
+                            <td class="" align="center">22</td>
+                            <td class="" align="center">23</td>
+                            <td class="" align="center">24</td>
+                            <td class="" align="center">25</td>
+                            <td align="center">26</td>
+                        </tr>
+                        <tr>
+                            <td align="center">27</td>
+                            <td class="" align="center">28</td>
+                            <td class="" align="center">29</td>
+                            <td class="" align="center">30</td>
+                            <td class="" align="center">31</td>
+                            <td align="center">1</td>
+                            <td align="center">2</td>
+                        </tr>
+                        <tr>
+                            <td align="center">3</td>
+                            <td align="center">4</td>
+                            <td align="center">5</td>
+                            <td align="center">6</td>
+                            <td align="center">7</td>
+                            <td align="center">8</td>
+                            <td align="center">9</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="sidebar_box">
+                <div class="sidebar_tag">最新随笔</div>
+                <div class="sidebar_text">
+                    <a href="case01.html">科学养猪的意义</a><br/>
+                    <a href="case02.html">原生态养猪</a><br/>
+                    <a href="case03.html">科学养猪，这样才能获得最高效益</a><br/>
+                    <a href="case04.html">创业经：如何科学养猪</a><br/>
+                </div>
+            </div>
+            <div class="sidebar_box">
+                <div class="sidebar_tag">随笔档案</div>
+                <div class="sidebar_text">
+                    <a href="#">2020年11月</a><br/>
+                    <a href="#">2020年10月</a><br/>
+                    <a href="#">2020年9月</a><br/>
+                    <a href="#">2020年8月</a><br/>
+                    <a href="#">2020年7月</a><br/>
+
+                </div>
+            </div>
+            <div class="sidebar_box">
+                <div class="sidebar_tag">常用链接</div>
+                <div class="sidebar_text">
+                    <a href="https://www.baidu.com/">百度</a><br/>
+                    <a href="https://www.sina.com.cn/">新浪</a><br/>
+                    <a href="https://www.sohu.com/">搜狐</a><br/>
+                    <a href="https://www.csdn.net/">CSDN</a><br/>
+                    <a href="https://github.com/">GitHub</a><br/>
+                    <a href="https://www.google.cn/">Google</a><br/>
+                </div>
+            </div>
+
+        </div>
+        <div class="banner_img_page"><img src="img/case01/01_page.png" alt=""></div>
+        <h1 class="h1">科学养猪的真正奥义，培养拯救人类的医学英雄</h1>
+        <!--文本图片盒子-->
+        <div class="box_text_page">
+            <p class="p1">
+                <br/>
+                2018年12月底，德国慕尼黑大学布鲁诺·瑞切特实验室的4只狒狒成功植入了猪的心脏了。<br/>
+                它们在接受猪心脏移植后，存活时间均超过了90天。<br/>
+                其中最长的一只存活了195天，远超过非人类灵长动物异种心脏移植的记录。<br/>
+                这项研究发表出版在12月《自然》的期刊上。这也意味着未来猪的异种移植可能会成功。<br/>
+                <img src="img/case01/img_10.png" alt=""><br/>
+                试想一下，假如你的心脏正在衰竭，焦急地等待一颗新的心脏。<br/>
+                好不容易等到合适的供体，医生此时却打电话告诉你：捐赠者不是人，而是一头猪。<br/>
+                这听起来像科幻桥段，但这还真可能就在不远的将来就会实现了。<br/>
+                不妨畅想一下，真将猪的心脏移植给人类，世界会变成什么样子？<br/>
+                肥猪们或许不会因成为器官捐赠者高兴地四处打滚，但养猪的人可能会乐开了花。<br/>
+                因为当它们成为心脏移植手术的供体后，或许能比现在卖上一个更好的价钱。<br/>
+                但如果未来身边的亲人胸腔里正跳动着一颗“猪心”，那么我们会不会对餐桌上猪排猪肉会有些忌惮？<br/>
+                当身份卑微的猪变成了能挽救人类生命的英雄后，我们与猪之间的关系是否会发生变化？<br/><br/><br/>
+
+                对于这一系列的问题，想必每个人都能给出不同的答案。<br/>
+                能确定的是，这种方式带来的道德困境还是小于所谓的“救命宝宝”。<br/>
+                比如为了给病重的孩子提供救命的器官而专门再生一个孩子。<br/>
+                毕竟猪原本就是用来供人类利用的动物。<br/>
+                而随着科学家日后找到引发排异反应的基因，并将其换成人类可以容忍的基因后，也具备了一些人类的属性。<br/>
+                <img src="img/case01/img_11.png" alt=""><br/>
+                看到这里，有没有改变你对猪的刻板印象呢？<br/>
+                由于猪在科研发展上具有的重大价值，所以在我国“模式动物表型与遗传研究设施”的大项目中，关于猪的部分也被称作“天蓬工程”。<br/>
+                该名字来源于妇孺皆知的‘天蓬元帅’，寓意是帮人类撑起一顶抵御某些疾病风险的‘天蓬’。<br/>
+                而摒弃了对猪的偏见之后，我们也希望猪年猪仔能带来更多的好运和惊喜。<br/>
+                正如段子里唱的的“猪年摸猪头，万事不用愁；猪年摸猪腿，顺风又顺水....."<br/><br/><br/>
+                <span>  <i>*参考资料</i><br/>
+            <i>Deschamps JY, Roux FA, Sa? P, Gouin E.History ofxenotransplantation.<br/>
+            Xenotransplantation. 2005 Mar; 12(2):91-109.<br/>
+            Cooper DK, Ekser B, Ramsoondar J, Phelps C,Ayares D.<br/>
+            The role of genetically engineered pigs in xenotransplantationresearch.<br/>
+               J Pathol. 2016 Jan;238(2):288-99. doi:10.1002/path.4635. Epub 2015Oct 7.<br/></i></span>
+
+            <div class="page">
+                <span class="previous_page"><a href="case01_page3.html">上一页</a></span>
+                <!--            <span class="next_page"><a href="case01_page4.html">下一页</a></span>-->
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--底部-->
+<!--<div id="footer">CopyRight@copy2020 版权所有byXLT</div>-->
+
+</body>
+<script src=" js/btn_and_divbg.js"></script>
+<script src="js/banner.js"></script>
+<script src="js/lines.js"></script>
+</html>

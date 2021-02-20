@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web_Design</title>
+    <link rel="stylesheet" href="css/day_night.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/all_div.css">
+    <link rel="stylesheet" href="css/sildebar_box.css">
+
+</head>
+<body onload="e('body')">
+<!--导航条-->
+<div class="nav" id="nav">
+    <ul class="main">
+        <li><a href="main.html">首页</a>
+
+        </li>
+        <li><a href="#">随笔</a>
+            <ul class="drop menu">
+                <li><a href="#">最新随笔</a></li>
+                <li><a href="#">随笔档案</a></li>
+                <li><a href="#">其他随笔</a></li>
+
+            </ul>
+        </li>
+        <li><a href="#">档案</a>
+            <ul class="drop menu">
+                <li><a href="#">NULL</a></li>
+                <li><a href="#">NUll</a></li>
+                <li><a href="#">NULL</a></li>
+
+            </ul>
+        </li>
+        <li><a href="#">其他</a>
+            <ul class="drop menu">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">随笔</a></li>
+                <li><a href="#">档案</a></li>
+
+            </ul>
+        </li>
+        <li><a href="#">常用网址</a>
+            <ul class="drop menu">
+                <li><a href="#">百度</a></li>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">CSDN</a></li>
+            </ul>
+        </li>
+        <li><a href="#">关于</a>
+            <ul class="drop menu">
+                <li><a href="#">我的资料</a></li>
+                <li><a href="#">联系方式</a></li>
+                <li><a href="#">我的Github</a></li>
+            </ul>
+        </li>
+    </ul>
+    <!--  开关  -->
+    <div class="shift">
+        <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
+    </div>
+</div>
+<div class="bg_img"></div>
+<div class="div_tag">
+    <div class="tag_text">
+        <p>这是我的博客</p>
+        <span></span>
+    </div>
+</div>
+<div class="div_base">
+    <div class="div_01_base">
+        <!--轮播图-->
+        <div class="banner">
+            <div class="banner_pic" id="banner_pic">
+                <div class="current"><img src="img/bg1.png" alt=""></div>
+                <div class="pic"><img src="img/bg2.png" alt=""></div>
+                <div class="pic"><img src="img/bg3.png" alt=""></div>
+                <div class="pic"><img src="img/bg4.png" alt=""></div>
+            </div>
+            <div class="button_p">
+                <ol id="button">
+                    <li class="current"></li>
+                    <li class="bt"></li>
+                    <li class="bt"></li>
+                    <li class="bt"></li>
+                </ol>
+            </div>
+        </div>
+        <!--侧边栏-->
+        <div class="sidebar">
+            <div class="sidebar_box_1">
+                <div class="sidebar_tag">公告</div>
+                <div class="sidebar_text">
+                    <p>这篇文章不错，不妨关注我吧，这是对我最大的鼓励，我将为你创造更加优秀的文章</p>
+                    <br/>
+                    <p>鼓励一下：&ensp;&ensp;关注</p><br/>
+                    <p>昵称：&ensp;&ensp;X</p>
+                    <p>粉丝：&ensp;&ensp;999+</p>
+                    <p>关注：&ensp;&ensp;23</p><br/>
+                    <p>我的github ↓↓↓↓↓↓↓↓</p>
+                    <a href="https://github.com/RebelliousVicuna">
+                        <div class="sidebar_github"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar_box">
+                <div class="sidebar_tag">搜索</div>
+                <div class="sidebar_search">
+                    <input type="text" class="sidebar_input"/>
+                    <input type="button" class="sidebar_button" value="找找看"/>
+                </div>
+                <div class="cal_box">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td colspan="7">
+                                <table class="cal_box">
+                                    <tbody>
+                                    <tr>
+                                        <td>&lt;</td>
+                                        <td align="center">2020年12月</td>
+                                        <td align="right">&gt;</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>日</th>
+                            <th>一</th>
+                            <th>二</th>
+                            <th>三</th>
+                            <th>四</th>
+                            <th>五</th>
+                            <th>六</th>
+                        </tr>
+                        <tr>
+                            <td align="center">29</td>
+                            <td align="center">30</td>
+                            <td class="" align="center">1</td>
+                            <td class="" align="center">2</td>
+                            <td class="" align="center">3</td>
+                            <td class="" align="center">4</td>
+                            <td align="center">5</td>
+                        </tr>
+                        <tr>
+                            <td align="center">6</td>
+                            <td class="" align="center">7</td>
+                            <td class="" align="center">8</td>
+                            <td class="" align="center">9</td>
+                            <td class="" align="center">10</td>
+                            <td class="" align="center">11</td>
+                            <td align="center">12</td>
+                        </tr>
+                        <tr>
+                            <td align="center">13</td>
+                            <td class="" align="center">14</td>
+                            <td class="" align="center">15</td>
+                            <td class="" align="center">16</td>
+                            <td class="" align="center">17</td>
+                            <td class="" align="center">18</td>
+                            <td align="center">19</td>
+                        </tr>
+                        <tr>
+                            <td align="center">20</td>
+                            <td class="" align="center">21</td>
+                            <td class="" align="center">22</td>
+                            <td class="" align="center">23</td>
+                            <td class="" align="center">24</td>
+                            <td class="" align="center">25</td>
+                            <td align="center">26</td>
+                        </tr>
+                        <tr>
+                            <td align="center">27</td>
+                            <td class="" align="center">28</td>
+                            <td class="" align="center">29</td>
+                            <td class="" align="center">30</td>
+                            <td class="" align="center">31</td>
+                            <td align="center">1</td>
+                            <td align="center">2</td>
+                        </tr>
+                        <tr>
+                            <td align="center">3</td>
+                            <td align="center">4</td>
+                            <td align="center">5</td>
+                            <td align="center">6</td>
+                            <td align="center">7</td>
+                            <td align="center">8</td>
+                            <td align="center">9</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="sidebar_box">
+                <div class="sidebar_tag">最新随笔</div>
+                <div class="sidebar_text">
+                    <a href="case01.html">科学养猪的意义</a><br/>
+                    <a href="case02.html">原生态养猪</a><br/>
+                    <a href="case03.html">科学养猪，这样才能获得最高效益</a><br/>
+                    <a href="case04.html">创业经：如何科学养猪</a><br/>
+                </div>
+            </div>
+            <div class="sidebar_box">
+                <div class="sidebar_tag">随笔档案</div>
+                <div class="sidebar_text">
+                    <a href="#">2020年11月</a><br/>
+                    <a href="#">2020年10月</a><br/>
+                    <a href="#">2020年9月</a><br/>
+                    <a href="#">2020年8月</a><br/>
+                    <a href="#">2020年7月</a><br/>
+
+                </div>
+            </div>
+            <div class="sidebar_box">
+                <div class="sidebar_tag">常用链接</div>
+                <div class="sidebar_text">
+                    <a href="https://www.baidu.com/">百度</a><br/>
+                    <a href="https://www.sina.com.cn/">新浪</a><br/>
+                    <a href="https://www.sohu.com/">搜狐</a><br/>
+                    <a href="https://www.csdn.net/">CSDN</a><br/>
+                    <a href="https://github.com/">GitHub</a><br/>
+                    <a href="https://www.google.cn/">Google</a><br/>
+                </div>
+            </div>
+
+        </div>
+        <!--文本图片盒子-->
+        <div class="box_text">
+            <a href="case01.html">
+                <div class="box_01">
+                    <h1>1.科学养猪的真正奥义，培养拯救人类的医学英雄</h1>
+                    <img src="img/01_page1.png" alt="">
+                </div>
+            </a>
+            <a href="case02.html">
+                <div class="box_01">
+                    <h1>现代科学养猪新技术—原生态养猪</h1>
+                    <img src="img/02_page.png" vspace="100px" hspace="10px" align="left">
+                    <span>
+                    <br/>&ensp;&ensp;&ensp;&ensp;概述：养猪场粪便污染一直是我国养猪业的一大难题，养猪场粪便不仅对养猪场内猪群有较大的疾病传染威胁，
+                    还对周围环境造成严重的污染。之前，我国为此付出较大的努力来研发出好多解决猪场粪便污染问题，
+                    但是效果并不太理想。目前，经过我国养殖专家不懈努力的研究，终于找到了解决猪场粪便污染的技术，
+                    那就是原生态养猪技术。<br/><br/>
+                    &ensp;&ensp;&ensp;&ensp;我国一直倡导科学养猪，但是并没有一套完整的养猪技术，
+                    无法彻底解决养猪场粪便污染问题，如今这个难题已经被解决了，
+                    原生态养猪技术能够无污染的解决养猪场的粪便处理问题，
+                    下面我们一起来探讨一下原生态养猪技术的要点分析。</span>
+                </div>
+            </a>
+            <a href="case03.html">
+                <div class="box_01">
+                    <h1>怎样科学养猪，科学养猪，这样才能获得最高的经济效益 </h1>
+                    <img src="img/03_page.png" alt="" align="right">
+                    <span><br/>&ensp;&ensp;&ensp;&ensp;在中国，人们在日常生活中大多数吃的都是猪肉。
+                        中国人口的数量之庞大，对于猪肉的需求量之多，
+                        这让猪肉市场的前景非常的可观。许多人想着靠养殖猪来发家致富。
+                        可是究竟怎么样才能够将猪养殖的非常的好呢？
+                        下面我就给大家介绍一些具体的方法供养殖户参考。</span>
+                </div>
+            </a>
+
+        </div>
+        <div class="page">
+            <!--                <span class="previous_page"><a href="main.html">上一页</a></span>-->
+            <span class="previous_page"><a href="main.html"></a></span>
+            <span class="next_page"><a href="page2.html">下一页</a></span>
+        </div>
+
+    </div>
+    <!--底部-->
+    <div id="footer">CopyRight@copy2020 版权所有byXLT</div>
+</div>
+
+
+</body>
+<script src=" js/btn_and_divbg.js"></script>
+<script src="js/banner.js"></script>
+<script src="js/lines.js"></script>
+</html>

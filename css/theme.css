@@ -1,0 +1,92 @@
+
+.theme-light {
+    --bg_color: #edecea;
+    --bg_box_color: #fcfdfd;
+    --text_color: #000000;
+    --nav_color: #fcfcef;
+    --nav_fill_color: #7d9ede;
+    --div_float_color: #363636;
+    --tag_color: #5a5959
+}
+
+.theme-dark {
+    --bg_color: #333333;
+    --bg_box_color: #232222;
+    --text_color: #fafafa;
+    --nav_color: #3e3737;
+    --nav_fill_color: #631818;
+    --div_float_color: #c1bdbd;
+    --tag_color: #c1bdbd
+}
+
+.theme-dark .bg_img {
+    background-image: url("../img/bg_dark.jpg");
+    background-size: cover;
+    transition: 0.7s all;
+}
+
+.theme-light .bg_img {
+    background-image: url("../img/banner_atum.png");
+    background-size: cover;
+    transition: 0.7s all;
+}
+
+.theme-dark .bg_img_page {
+    background-image: url("../img/bg_dark.jpg");
+    background-size: cover;
+}
+
+.theme-light .bg_img_page {
+    background-image: url("../img/banner_atum.png");
+    background-size: cover;
+}
+
+.theme-light .sidebar_github {
+    background-image: url("../img/github_light.png");
+}
+
+.theme-dark .sidebar_github {
+    background-image: url("../img/github_dark.png");
+}
+
+.theme-light #footer {
+    background-image: url("../img/banner_fo_atum.png");
+}
+
+.theme-dark #footer {
+    /*background-image: url("../img/banner_atum.png");*/
+}
+
+
+.div_base {
+    position: relative;
+    width: 1620px;
+    height: 2300px;
+    margin: 0 auto 0 80px;
+    filter: alpha(Opacity=80);
+    opacity: 0.9;
+    top: 240px;
+    background-color: var(--bg_box_color);
+    border-radius: 10px;
+}
+
+.div_base_page {
+    position: relative;
+    width: 1620px;
+    height: 3000px;
+    margin: 0 auto 0 80px;
+    filter: alpha(Opacity=80);
+    opacity: 0.95;
+    top: 240px;
+    background: rgba(0,0,0,0);
+}
+
+.div_01_base {
+    position: relative;
+    width: 1600px;
+    height: 2200px;
+    left: 20px;
+}
+
+
+

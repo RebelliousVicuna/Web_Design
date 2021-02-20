@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav {
+    height: 45px;
+    width: 100%;
+    /*margin: 10px 0px 50px 0px;*/
+    margin: 10px auto;
+    /*background-color: rgba(23, 23, 50, 0.7);*/
+    background-color: var(--nav_color);
+    text-align: center;
+    border-radius: 20px;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    z-index: 4;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.main > li {
+    margin: 0 3%;
+}
+
+.main > li a {
+    /*border-left: 1px solid rgba(23, 23, 50, 1);*/
+
+}
+
+.main a {
+    text-decoration: none;
+    color: var(--text_color);
+    text-transform: capitalize;
+    font-family: monospace;
+    display: block;
+    padding: 10px 15px;
+    font-size: 20px;
+    transition: background-color 0.5s ease-in-out;
+    /*font-family: "Raleway", sans-serif;*/
+}
+
+.main a:hover {
+    background-color: var(--nav_fill_color);
+}
+
+.drop li {
+    opacity: 0;
+    transform-origin: top center;
+
+}
+
+.drop li a {
+    background-color: var(--nav_color);
+    padding: 10px 0;
+}
+
+.main :hover .menu li:first-of-type {
+    animation: menu 0.3s ease-in-out forwards;
+    animation-delay: 0.1s;
+}
+
+.main :hover .menu li:nth-of-type(2) {
+    animation: menu 0.3s ease-in-out forwards;
+    animation-delay: 0.2s;
+}
+
+.main :hover .menu li:nth-of-type(3) {
+    animation: menu 0.3s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+
+.main :hover .menu li:last-of-type {
+    animation: menu 0.3s ease-in-out forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes menu {
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.white-mode {
+    text-decoration: none;
+    padding: 7px 10px;
+    background-color: #122;
+    border-radius: 3px;
+    color: #fff;
+    transition: 0.35s ease-in-out;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-family: sans-serif;
+}
+
+.white-mode:hover {
+    background-color: #fff;
+    color: #122;
+}
